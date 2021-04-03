@@ -1,0 +1,120 @@
+
+p{
+  margin: 0;
+}
+
+span{
+  font-weight: bold;
+  color: rgb(198, 149, 204);
+
+}
+
+body{
+    height: 200px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(189, 181, 201);
+    margin: 0%;
+    backdrop-filter: blur(4px);
+
+   }
+
+   #rex{
+    background-image: url("../ressource/dragonBleu.png");
+    background-size: 60px 70px;
+    position: relative;
+    top: 60px;
+    height: 70px;
+    width: 60px;  
+    left:5px;
+     
+  }
+
+  #tree{
+    background-image: url("../ressource/tree.png");
+    background-size: 40px 40px;
+    position: relative;
+    height: 40px;
+    width: 40px;   
+    top: 22px;
+    left:400px;
+    
+  }
+
+  #jungle{
+    background-image: url("../ressource/jungleBackground.jpg");
+    background-size: 400px 200px;
+  }
+
+
+  #tuto{
+    border-style: ridge;
+    border-color: rgb(166, 173, 243);
+    border-radius: 2px;
+    color: rgb(166, 173, 243);
+    font-size: 20px;
+    position: relative;
+    height: fit-content;
+    width: 360px; 
+    margin: 0;  
+    padding:0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    left:20px ;
+    top: 5px;
+  }
+
+  #score{
+    color: rgb(166, 173, 243);
+    font-size: 25px;
+    position: relative;
+    top: 7px;
+  }
+
+  .jump{
+    animation: jump 0.3s linear;
+  }
+
+  .moveLeft{
+    animation: moveLeft 0.8s linear infinite;
+  }
+
+  @keyframes jump{
+    0%{top: 60px;}
+    30%{top: 20px;}
+    50%{top: 2px;}
+    80%{top: 20px;}
+    100%{top: 60px;}
+  }
+
+  @keyframes moveLeft{
+    0%{left:400px}
+    100%{left:-50px}
+  }
+
+  
+#hightScore{
+  display: inline-block;
+  animation:scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0s infinite alternate both running ;
+
+}
+#gameOver{
+  display: inline-block;
+  animation:scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0s infinite alternate both running ;
+  position: relative;
+  left:135px;
+}
+
+
+  @keyframes scale-up-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+
+

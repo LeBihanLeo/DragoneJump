@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2, 
+    "name": "DragoneJump", 
+    "description": "Une idée originale", 
+    "version": "1.0", 
+    "permissions": [ 
+        "http://*/*",
+        "https://*/*",
+           "tabs" 
+       ],
+    "browser_action": {   
+     "default_icon" : "./ressource/dragonBleu.png", 
+     "default_popup": "./html/myPage.html" 
+    },
+    "icons": { 
+     "128" : "./ressource/dragonBleu.png" 
+    },
+    "background": { 
+        "scripts": ["./js/statsWeb.js"]
+    }
+   }
